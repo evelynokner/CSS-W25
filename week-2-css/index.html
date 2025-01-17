@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- required metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="description" content="This week we are working with colors and typography">
+        <title>Week 2 | Colors & Typography</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- semantic elements (header, main, footer)-->
+        <header>
+            <!-- logo container, div is not semantic -->
+            <div>
+                <a href="index.html">
+                    <img src="./img/interface-logo.png" alt="header logo">
+                </a>
+            </div>
+            <nav>
+                <menu>
+                    <li><a href="#lesson-row-1">Link 1</a></li>
+                    <li><a href="#lesson-row-2">Link 2</a></li>
+                </menu>
+            </nav>
+        </header>
+        <section class="lesson-masthead">
+            <h1>Working With Colors & Typography</h1>
+        </section>
+        <main>
+            <section class="lesson-row-1" id="lesson-row-1">
+                <!-- adding a div to add contrast to the image and text -->
+                <div>
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sint officiis culpa consectetur iusto architecto harum explicabo, 
+                    laborum repudiandae inventore qui quibusdam neque nihil, rerum nobis?</p>
+                </div>
+            </section>
+            <section class="lesson-row-2" id="lesson-row-2">
+                <div>
+                    <h3>But What If We Wanted To Make Some Text <span>Stand</span> Out?</h3>
+                    <p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing </mark> elit.
+                    Sint officiis culpa consectetur iusto architecto harum explicabo, 
+                    laborum repudiandae inventore qui quibusdam neque nihil, rerum nobis?</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h6>End of Lesson</h6>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+/**
+Colors:
+    Blue: #072d67   | rgb(7, 45, 103)
+    Orange: #f4511e | rgb(244, 81, 30)
+    Yellow: #f9a825 | rgb(249, 168, 37)
+    Purple: #5e35b1 | rgb(94, 53, 177)
+ */
+html{scroll-behavior: smooth;}
+/* fonts */
+@font-face {
+    font-family: "Yellow Rabbit";
+    src: url("../fonts/Yellowrabbit.otf");
+    font-weight: auto;
+}
+h1{
+    font-family: "Yellow Rabbit", "Poetsen One", sans-serif; /* extra fonts are backups */
+}
+h2,h3,h4,h5,h6{
+    font-family: "Poetsen One", sans-serif;
+}
+p,li,a{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 20px; /* or 1.2em */
+}
+/* header */
+header{
+    display: flex;
+    width: 100%;
+    height: 125px;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 5px;
+    position: fixed;
+}
+header div{
+    flex-grow: 1;
+    height: 115px;
+    width: auto;
+}
+header img{
+    width: auto;
+    height: 100%;
+}
+header menu{
+    list-style: none;
+    display: flex; /* to make list horizontal */
+}
+header li{
+    padding: 0 10px;
+}
+header li a{
+    color: #0e0e0e;
+}
+.lesson-masthead{
+    height: 100vh;
+    background-color: #072d67;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lesson-masthead h1{
+    font-size: 7em; /* 115px */
+    color: #f9a825;
+    text-shadow: 4px 3px 4px rgba(0,0,0,.8); /* x-axis, y-axis, blur radius, shadow color */
+    letter-spacing: 1.75px;
+}
+/* main content */
+.lesson-row-1{
+    height: 400px;
+    background-image: url("../img/letter-soup.jpg");
+    background-size: cover; /* take up full space & maintain aspect ratio */
+}
+.lesson-row-1 div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    background-color: rgba(244,81,30,.7);
+    color: #f8f8f8;
+}
+.lesson-row-2{
+    padding: 5%;
+    text-align: center;
+}
+/* help with assignment 2 */
+.lesson-row-2 h3{
+    font-size: 2.5em;
+    /* need to re-add margin because we appllied reset.css */
+    margin-bottom: 15px;
+}
+.lesson-row-2 h3 span{
+    font-size: 3em;
+    font-weight: bold;
+}
+.lesson-row-2 p:first-line{
+    font-weight: 900;
+    font-style: italic;
+}
+.lesson-row-2 p mark{
+    background-color: rgba(0,0,0,0); /* fully transparent */
+    color: #5e35b1;
+    font-weight: 900;
+    font-size: 1.25em;
+}
