@@ -1,0 +1,41 @@
+html{scroll-behavior: smooth;}
+
+/* set fonts */
+@font-face {
+    font-family: "Sonic Turbo";
+    src: url("../fonts/SonicTurbo.otf");
+    font-weight: auto; /*******************/
+}
+@font-face {
+    font-family: "Sonic Empire";
+    src: url(../fonts/SonicEmpireItalic-8qdJ.ttf);
+}
+h1{
+    font-family: "Sonic Turbo", "Poetsen One", sans-serif; /* extra fonts are backups */
+}
+h2,h3,h4,h5,h6{
+    font-family: "Poetsen One", sans-serif;
+}
+p,li,a{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 20px; /* or 1.2em */
+}
+
+/* resize & center header image */
+header, .video-masthead{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+header img{
+    width: auto;
+    height: 100px;
+    
+}
+/* center video */
+.video-masthead{
+    display: flex;
+    align-items: center;
+}
