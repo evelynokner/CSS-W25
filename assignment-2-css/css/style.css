@@ -16,7 +16,13 @@ body{
 h1{
     font-family: "Sonic Empire", "Poetsen One", sans-serif;
     font-size: 80px;
+    font-style: bold;
+    font-weight: 700;
     text-align: center;
+    padding: 15px;
+    color: #ffd024;
+    background-color: rgba(48, 97, 227, .5);
+    text-shadow: 6px 5px 6px rgba(48, 97, 227); /* x-axis, y-axis, blur radius, shadow color */
 }
 .left-aligned{
     text-align: left;
@@ -30,14 +36,14 @@ h1{
     padding-right: 40px;
 }
 span{ /* change to classes */
-    font-family: "Sonic Empire", "Poetsen One", sans-serif;
+    font-family: "Sonic Empire", "Bruno Ace", sans-serif;
 }
 
 .font-1{
     font-family: "Sonic Turbo", sans-serif;
 }
 h2,h3,h4,h5,h6, p{
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Bruno Ace", sans-serif;
 }
 p{
     font-size: 30px;
