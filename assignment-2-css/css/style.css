@@ -1,41 +1,75 @@
 html{scroll-behavior: smooth;}
-
+body{
+    background-color: #ffd78f;
+}
 /* set fonts */
 @font-face {
     font-family: "Sonic Turbo";
     src: url("../fonts/SonicTurbo.otf");
-    font-weight: auto; /*******************/
+    font-weight: auto;
 }
 @font-face {
     font-family: "Sonic Empire";
-    src: url(../fonts/SonicEmpireItalic-8qdJ.ttf);
+    src: url(../fonts/SonicEmpireItalic.ttf);
+    font-weight: auto;
 }
 h1{
-    font-family: "Sonic Turbo", "Poetsen One", sans-serif; /* extra fonts are backups */
+    font-family: "Sonic Empire", "Poetsen One", sans-serif;
+    font-size: 80px;
+    text-align: center;
 }
-h2,h3,h4,h5,h6{
-    font-family: "Poetsen One", sans-serif;
+.left-aligned{
+    text-align: left;
+    padding-left: 40px;
 }
-p,li,a{
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-    font-size: 20px; /* or 1.2em */
+.center-aligned{
+    text-align: center;
+}
+.right-aligned{
+    text-align: right;
+    padding-right: 40px;
+}
+span{ /* change to classes */
+    font-family: "Sonic Empire", "Poetsen One", sans-serif;
 }
 
+.font-1{
+    font-family: "Sonic Turbo", sans-serif;
+}
+h2,h3,h4,h5,h6, p{
+    font-family: "Poetsen One", sans-serif;
+}
+p{
+    font-size: 30px;
+    font-style: none;
+}
 /* resize & center header image */
 header, .video-masthead{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin: 25px 430px;
+    padding-left: 30px; padding-right: 40px;
+}
+.video-masthead{
+    background-color: blue;
 }
 header img{
     width: auto;
     height: 100px;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 /* center video */
 .video-masthead{
     display: flex;
     align-items: center;
+    height: 350px;
 }
