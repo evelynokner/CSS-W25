@@ -50,15 +50,14 @@ header div a img{
 
 /* Fly in the Freedom title */
 h1{
-    font-family: "Sonic Empire", "Poetsen One", sans-serif;
+    font-family: "Sonic Turbo", "Bruno Ace", sans-serif;
     font-size: 80px;
-    font-style: bold;
-    font-weight: 700;
+    font-weight: 100;
     text-align: center;
     padding: 15px;
     color: #ffd024;
     background-color: #134dee;
-    text-shadow: 6px 5px 6px rgb(0, 0, 0); /* x-axis, y-axis, blur radius, shadow color */
+    text-shadow: 6px 10px 6px rgb(0, 0, 0); /* x-axis, y-axis, blur radius, shadow color */
 }
 /* differently align sections of text (lyrics) */
 .left-aligned{
@@ -101,15 +100,14 @@ h1{
 .font-3{
     font-family: "Sixtyfour", sans-serif;
     letter-spacing: -1px;
-    color: #ff9924;
-    text-shadow: 6px 5px 6px rgb(0, 0, 0);
+    color: #ff2424;
+    text-shadow: 6px 5px 6px rgb(248, 248, 248);
 }
 h2,h3,h4,h5,h6, p{
     font-family: "Bruno Ace", sans-serif;
 }
 p{
     font-size: 35px;
-    font-style: none;
     padding-top: 5px;
     padding-bottom: 5px;
 }
