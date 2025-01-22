@@ -1,64 +1,8 @@
 html{scroll-behavior: smooth;}
 body{
-    background-color: #ffd78f;
+    background-color: #ffe896;
 }
-/* set fonts */
-@font-face {
-    font-family: "Sonic Turbo";
-    src: url("../fonts/SonicTurbo.otf");
-    font-weight: auto;
-}
-@font-face {
-    font-family: "Sonic Empire";
-    src: url(../fonts/SonicEmpireItalic.ttf);
-    font-weight: auto;
-}
-h1{
-    font-family: "Sonic Empire", "Poetsen One", sans-serif;
-    font-size: 80px;
-    font-style: bold;
-    font-weight: 700;
-    text-align: center;
-    padding: 15px;
-    color: #ffd024;
-    background-color: rgba(48, 97, 227, .5);
-    text-shadow: 6px 5px 6px rgb(48, 97, 227); /* x-axis, y-axis, blur radius, shadow color */
-}
-/* differently align sections of text (lyrics) */
-.left-aligned{
-    text-align: left;
-    padding-left: 40px;
-}
-.center-aligned{
-    text-align: center;
-}
-.right-aligned{
-    text-align: right;
-    padding-right: 40px;
-}
-
-/* apply different fonts to different spans */
-.font-1{
-    font-family: "Sonic Turbo", "Bruno Ace", sans-serif;
-}
-.font-2{
-    font-family: "Sonic Empire", "Bruno Ace", sans-serif;
-}
-.font-3{
-    font-family: "Nabla", sans-serif;
-}
-.font-4{
-    font-family: "Sixtyfour", sans-serif;
-}
-
-h2,h3,h4,h5,h6, p{
-    font-family: "Bruno Ace", sans-serif;
-}
-p{
-    font-size: 35px;
-    font-style: none;
-}
-/* resize & center header image */
+/* resize & center header image - having difficulty properly centering header images */
 header, .video-masthead{
     display: block;
     margin-left: auto;
@@ -75,7 +19,6 @@ header{
     background-color: #3061e3;
     border-radius: 10px;
 }
-
 header div a img{
     width: auto;
     height: 100px;
@@ -92,4 +35,91 @@ header div a img{
 .video-masthead iframe{
     height: 400px;
     width: 800px;
+}
+/* set fonts */
+@font-face {
+    font-family: "Sonic Empire";
+    src: url(../fonts/SonicEmpireItalic.ttf);
+    font-weight: auto;
+}
+@font-face {
+    font-family: "Sonic Turbo";
+    src: url("../fonts/SonicTurbo.otf");
+    font-weight: auto;
+}
+
+/* Fly in the Freedom title */
+h1{
+    font-family: "Sonic Empire", "Poetsen One", sans-serif;
+    font-size: 80px;
+    font-style: bold;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+    color: #ffd024;
+    background-color: #3061e3;
+    text-shadow: 6px 5px 6px rgb(0, 0, 0); /* x-axis, y-axis, blur radius, shadow color */
+}
+/* differently align sections of text (lyrics) */
+.left-aligned{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.center-aligned{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.right-aligned{
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* apply different fonts to different text */
+.song-structure{
+    color: #3061e3;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+}
+.font-1{
+    font-family: "Sonic Empire", "Bruno Ace", sans-serif;
+    font-size: 45px;
+    color: #ed5712;
+    text-shadow: 3px 3px 3px #3060e3;
+}
+.font-2{
+    font-family: "Sonic Turbo", "Bruno Ace", sans-serif;
+    font-size: 40px;
+    color: #3061e3;
+    text-shadow: 6px 5px 6px rgb(227, 105, 48);
+}
+.font-3{
+    font-family: "Sixtyfour", sans-serif;
+    letter-spacing: -1px;
+    color: #ff9924;
+    text-shadow: 6px 5px 6px rgb(0, 0, 0);
+}
+h2,h3,h4,h5,h6, p{
+    font-family: "Bruno Ace", sans-serif;
+}
+p{
+    font-size: 35px;
+    font-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer div{
+    background-color: #3061e3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer h5, footer h6{
+    text-align: center;
+    font-size: 35px;
+    color: #ffd024;
 }
