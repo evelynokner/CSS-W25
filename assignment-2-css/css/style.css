@@ -57,7 +57,7 @@ h1{
     text-align: center;
     padding: 15px;
     color: #ffd024;
-    background-color: #3061e3;
+    background-color: #134dee;
     text-shadow: 6px 5px 6px rgb(0, 0, 0); /* x-axis, y-axis, blur radius, shadow color */
 }
 /* differently align sections of text (lyrics) */
@@ -115,10 +115,10 @@ p{
 }
 footer div{
     background-color: #3061e3;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-footer h5, footer h6{
+footer h3, footer h6{
     text-align: center;
     font-size: 35px;
     color: #ffd024;
