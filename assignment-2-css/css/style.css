@@ -22,8 +22,9 @@ h1{
     padding: 15px;
     color: #ffd024;
     background-color: rgba(48, 97, 227, .5);
-    text-shadow: 6px 5px 6px rgba(48, 97, 227); /* x-axis, y-axis, blur radius, shadow color */
+    text-shadow: 6px 5px 6px rgb(48, 97, 227); /* x-axis, y-axis, blur radius, shadow color */
 }
+/* differently align sections of text (lyrics) */
 .left-aligned{
     text-align: left;
     padding-left: 40px;
@@ -35,18 +36,26 @@ h1{
     text-align: right;
     padding-right: 40px;
 }
-span{ /* change to classes */
+
+/* apply different fonts to different spans */
+.font-1{
+    font-family: "Sonic Turbo", "Bruno Ace", sans-serif;
+}
+.font-2{
     font-family: "Sonic Empire", "Bruno Ace", sans-serif;
 }
-
-.font-1{
-    font-family: "Sonic Turbo", sans-serif;
+.font-3{
+    font-family: "Nabla", sans-serif;
 }
+.font-4{
+    font-family: "Sixtyfour", sans-serif;
+}
+
 h2,h3,h4,h5,h6, p{
     font-family: "Bruno Ace", sans-serif;
 }
 p{
-    font-size: 30px;
+    font-size: 35px;
     font-style: none;
 }
 /* resize & center header image */
@@ -54,20 +63,20 @@ header, .video-masthead{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
 }
 header{
-    display: flex;
-    align-items: center;
     background-color: #f8f8f8;
     border-radius: 10px;
-    margin: 25px 430px;
-    padding-left: 30px; padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .video-masthead{
-    background-color: blue;
+    background-color: #3061e3;
+    border-radius: 10px;
 }
-header img{
+
+header div a img{
     width: auto;
     height: 100px;
     padding-top: 20px;
@@ -77,5 +86,10 @@ header img{
 .video-masthead{
     display: flex;
     align-items: center;
-    height: 350px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+.video-masthead iframe{
+    height: 400px;
+    width: 800px;
 }
