@@ -2,6 +2,7 @@
 Jellycat Website Colour Scheme (complementary colours)
 Orange: #fd8204
 Blue: #13bfd6
+Pale Turquoise: #D8E7E5
 Black: #282421
 White: #f8f8f8
 **/
@@ -19,18 +20,38 @@ STYLING IDEAS
 
 
 /* FOOTER */
+.sns-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sns-icons img{
+    height: 40px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/** HOMEPAGE **/
 
 
-/* HOMEPAGE */
+/** ABOUT PAGE **/
 
 
-/* ABOUT PAGE */
+/** SHOP PAGE **/
+
+.sns-icons img:hover{
+    content: url("../img/products/product-1/dog.gif");
+}
+.sns-icons img:hover{
+    content: url("../img/products/product-2/frog.gif");
+}
+.sns-icons img:hover{
+    content: url("../img/products/product-3/capybara.gif");
+}
+
+/** PRODUCT PAGES **/
 
 
-/* SHOP PAGE */
 
-
-/* PRODUCT PAGES */
-
-
-/* CONTACT PAGE */
+/** CONTACT PAGE **/
