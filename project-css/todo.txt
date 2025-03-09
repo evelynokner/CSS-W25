@@ -1,0 +1,6 @@
+PROJECT TO-DO
+
+header:
+- turquoise lines above and below menu
+- make gifs for all products on hover for shop page
+- CTA: product cards (homepage)

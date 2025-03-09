@@ -1,6 +1,7 @@
 /** 
 Jellycat Website Colour Scheme (complementary colours)
 Orange: #fd8204
+Pale Orange: #ffd2a4
 Blue: #13bfd6
 Pale Turquoise: #D8E7E5
 Black: #282421
@@ -15,9 +16,48 @@ STYLING IDEAS
 - hover effects
 **/
 
-
+body{
+    background-color: #f8f8f8;
+}
 /* HEADER */
+#header{
+    display: flex;
+    align-items: center;
+    height: 125px;
+    width: auto;
+}
+#header div{
+    flex-grow: 1;
+}
+#header div img{
+    width: 100px;
+    height: auto;
+}
 
+
+/* adjust menu location */
+#header nav menu{
+    display: flex;
+    list-style: none;
+}
+#header nav menu li{
+    padding: 10px 30px;
+}
+#header nav menu li a{
+    text-decoration: none;
+    font-size: 28px;
+    color: #13bfd6;
+    
+}
+
+
+#header
+.line{
+    border: none;
+    height: 3px;
+    width: 70%;
+    background-color: #13bfd6;
+}
 
 /* FOOTER */
 .sns-icons{
@@ -30,6 +70,12 @@ STYLING IDEAS
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/** Mastheads **/
+.home-masthead img, .about-masthead img{
+    width: 100%;
+    height: auto;
 }
 
 /** HOMEPAGE **/
