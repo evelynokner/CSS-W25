@@ -1,0 +1,11 @@
+/**
+Bright Yellow: #FADD4B
+Salmon: #FCB79E
+Cream: #FEE8B8
+Bright Red: #D31821
+**/
+
+html{scroll-behavior: smooth;}
+body{
+    background-color: #FEE8B8;
+}
