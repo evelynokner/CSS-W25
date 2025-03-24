@@ -1,11 +1,84 @@
 /**
 Bright Yellow: #FADD4B
+Bright Orange: #E26D12
+Bright Red: #D31821
 Salmon: #FCB79E
 Cream: #FEE8B8
-Bright Red: #D31821
 **/
 
-html{scroll-behavior: smooth;}
+
+/*****************
+
 body{
-    background-color: #FEE8B8;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto; 
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: 
+    'head head head head'
+    'mast mast mast mast'
+    'main main main main'
+    'foot foot foot foot';
+    background-color: #f6f4f5;
+}
+***********************/
+
+html{scroll-behavior: smooth;}
+
+body{background-color: #FEE8B8;}
+
+/* FONTS */
+h1,h2,h3,h4,h5,h6{
+    font-family: "DynaPuff", sans-serif;
+}
+p, a, li, td, figcaption, blockquote{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* HEADER & FOOTER */
+.logo-container img{
+    width: 200px;
+    height: auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+header div{
+    width: auto;
+    height: 100%;
+    flex-grow: 1;
+}
+header div img{
+    width: auto;
+    height: 100%;
+}
+header menu{
+    display: flex;
+    align-items: center;
+}
+header menu li{
+    list-style: none;
+    padding: 5px 15px;
+}
+header menu li a{
+    color: #D31821;
+    font-size: 25px;
+    font-weight: 600;
+}
+header menu li a:hover{
+    color: #ff7866;
+    transition: all .25s ease-in;
+}
+.sec1{
+    background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
+}
+.sec2{
+    background-image: linear-gradient(180deg, #E26D12, #D31821);
+}
+.sec3{
+    background-image: linear-gradient(180deg, #FADD4B, #E26D12);
 }
