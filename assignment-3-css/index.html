@@ -33,6 +33,9 @@
             </nav>
         </header>
         <main>
+            <section class="masthead">
+                <img src="./img/starburst-masthead.png" alt="starburst masthead">
+            </section>
             <!-- about section, history section -->
             <section class="sec1">
                 <h1>Starburst</h1>
@@ -56,18 +59,30 @@
                 </a>
             </div>
             <div class="footer-form">
-                <form>
-                    <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="fname" required>
-                    <label for="lname">Last Name:</label>
-                    <input type="text" id="lname" name="lname" required>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="input">Reason for contacting:</label>
-                    <input type="text" id="input" name="input" required>
+                <h4>Contact Us</h4>
+                <form action="" method="post">
+                    <section>
+                        <div>
+                            <label for="fname"><mark>*</mark> First Name:</label>
+                            <p><input type="text" id="fname" name="fname" required></p>
+                        </div>
+                        <div>
+                            <label for="lname"><mark>*</mark> Last Name:</label>
+                            <p><input type="text" id="lname" name="lname" required></p>
+                        </div>
+                        <div>
+                            <label for="email"><mark>*</mark> Email Address:</label>
+                            <p><input type="email" id="email" name="email" required></p>
+                        </div>
+                        <div>
+                            <label for="input"><mark>*</mark> Reason for contacting:</label>
+                            <p><input type="text" id="input" name="input" required></p>
+                        </div>
+                    </section>
+                    <p><input type="submit" value="Submit">
                 </form>
             </div>
-            <div class="footer-nav">
+            <div>
                 <ul>
                     <li>Item 1</li>
                     <li>Item 2</li>
