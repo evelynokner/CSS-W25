@@ -42,28 +42,18 @@ p, a, li, td, figcaption, blockquote, input, label{
     font-size: 20px;
     text-decoration: none;
 }
-
-
+/* HEADER */
 .logo-container img{
     width: 200px;
     height: auto;
 }
-.masthead{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.masthead img{
-    height: auto;
-    width: 100%;
-}
-/* HEADER */
 header{
-    background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
+    background-color: #FEE8B8;
 }
 header, footer {
     display: flex;
     align-items: center;
+    padding: 15px 20px;
 }
 header div{
     width: auto;
@@ -86,16 +76,39 @@ header menu li a{
     color: #D31821;
     font-size: 25px;
     font-weight: 600;
+    transition: all .25s ease-in-out;
 }
 header menu li a:hover{
     color: #ff7866;
-    transition: all .25s ease-in;
+    transition: all .25s ease-in-out;
+}
+/* BODY */
+.masthead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.masthead img{
+    height: auto;
+    width: 100%;
+}
+.sec1, .sec2, .sec3{
+    padding: 100px;
 }
 .sec1{
+    background-image: linear-gradient(180deg, #FEE8B8, #FADD4B);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2{
     background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
 }
 .sec3{
     background-image: linear-gradient(180deg, #FADD4B, #E26D12);
+}
+.sec1 img{
+    clip-path: circle(50%);
 }
 
 /* FORM */
@@ -106,6 +119,7 @@ header menu li a:hover{
     border: dotted 3px #D31821;
     border-radius: 10px;
     margin: 20px 200px;
+    background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
 }
 .contact-form h4{
     text-align: center;
