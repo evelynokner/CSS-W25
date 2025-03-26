@@ -35,14 +35,15 @@ body{
 /* FONTS */
 h1,h2,h3,h4,h5,h6{
     font-family: "DynaPuff", sans-serif;
+    font-weight: 300;
 }
-p, a, li, td, figcaption, blockquote{
+p, a, li, td, figcaption, blockquote, input, label{
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 20px;
     text-decoration: none;
 }
 
-/* HEADER */
+
 .logo-container img{
     width: 200px;
     height: auto;
@@ -56,7 +57,11 @@ p, a, li, td, figcaption, blockquote{
     height: auto;
     width: 100%;
 }
+/* HEADER */
 header{
+    background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
+}
+header, footer {
     display: flex;
     align-items: center;
 }
@@ -89,30 +94,59 @@ header menu li a:hover{
 .sec1{
     background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
 }
-.sec2{
-    background-image: linear-gradient(180deg, #E26D12, #D31821);
-}
 .sec3{
     background-image: linear-gradient(180deg, #FADD4B, #E26D12);
 }
 
-/* FOOTER */
-.footer-form{
+/* FORM */
+.contact-form{
     display: flex;
     align-items: center;
+    justify-content: center;
+    border: dotted 3px #D31821;
+    border-radius: 10px;
+    margin: 20px 200px;
 }
-/********   EDIT    ********/
-.footer-form section{
+.contact-form h4{
+    text-align: center;
+    font-size: 30px;
+}
+.contact-form section{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 25px; /* grid version of margin - adds space btwn columns */
-    padding: 25px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
     text-align: left;
 }
-.footer-form input{
+.contact-form input{
+    font-size: 20px;
     width: 100%;
-    padding: 15px 5px;
-    font-size: 1.2em;
-    border-radius: 3px;
-    border: solid 2px #0e0e0e;
+    padding: 7px;
+    border: solid 2px #D31821;
+    border-radius: 5px;
+}
+.submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit-btn p input{
+    width: 200px;
+    height: 50px;
+    color: #f8f8f8;
+    background-color: #E26D12;
+    border-color: #D31821;
+    font-weight: 600;
+    transition: all .25s ease-in-out;
+}
+/* change button appearance on hover */
+.submit-btn p input:hover{
+    color: #FADD4B;
+    background-color: #D31821;
+    border-color: #E26D12;
+    border-radius: 25px;
+    transition: all .25s ease-in-out;
+}
+/* FOOTER */
+footer{
+    background-image: linear-gradient(180deg, #E26D12, #D31821);
 }
