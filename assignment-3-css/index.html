@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="./css/style.css">
         <!-- add jQuery CDN -->
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-        <!-- add JS/JQ file -->
-        <script type="text/javascript" src="./js/custom-js.js"></script>
         <!-- add Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +19,13 @@
         <header>
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="./img/starburst-logo.png">
+                    <img src="./img/starburst-logo.png" alt="starburst logo">
                 </a>
             </div>
             <nav>
                 <menu>
                     <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Our Products</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </menu>
@@ -39,32 +38,31 @@
             <!-- about section, history section -->
             <section class="sec1">
                 <div>
-                    <h1>Our Origins</h1>
+                    <h2>Our Origins</h2>
                     <p>Starburst candy, originally named "Opal Fruits", was introduced in 1960 in the UK by the Mars Company.
                         When the candy released in the United States in 1967, it was renamed to "Starburst".
-                        While the original four flavors remain iconic, starburst has been creating some fun flavors!
-
-Over the decades, Starburst introduced a variety of new flavors and spin-offs, such as tropical, sour, and even limited-edition blends. They even made fan favorites like "FaveREDs," which focus on the most popular red and pink flavors, and "All Pink" packs. 
-
-Starburst Today
-Today, Starburst is a global phenomenon, enjoyed by candy lovers of all ages. Beyond the classic chews, the brand has expanded its product line to include gummies, jelly beans, and even drink mixes inspired by its signature flavors.
-
-Whether you're enjoying the original fruity squares or exploring one of the many modern variations, Starburst remains a symbol of bright, bold, and unapologetically juicy fun. 
+                        The four original Starburst flavors, strawberry, orange, lemon and lime, remain popular to this day.
+                        Starburst has also experimented with lots of new flavors over the years,
+                        such as tropical, sour, and fan favorites focusing on the most popular red and pink flavors!
+                        To this day, Starburst remains a global phenomenon, enjoyed by candy lovers all around the world.
                     </p>
                 </div>
                 <div>
                     <img src="./img/starburst-candies.png" alt="starburst candy">
                 </div>
-                
             </section>
             <!-- interesting facts, eye-popping imagery, nutritional info -->
             <section class="sec2">
-                <h1>Starburst</h1>
+                <h2>Starburst</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, expedita.</p>
             </section>
             <section class="sec3">
-                <h1>Starburst</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, expedita.</p>
+                <h2>Ingredients</h2>
+                <h6>Per Pack (58 g)</h6>
+                <p>Sugar, corn syrup, apple juice from concentrate, 
+                    Hydrogenated palm kernel oil, Citric acid, Tapioca dextrin, Gelatin, 
+                    Modified corn starch, Natural and artificial flavours, Allura red, 
+                    Tartrazine, Sunset yellow FCF, Brilliant blue FCF.</p>
             </section>
             <section class="contact-form">
                 <div>
@@ -72,20 +70,22 @@ Whether you're enjoying the original fruity squares or exploring one of the many
                     <form action="" method="post">
                         <section>
                             <div>
-                                <label for="fname"><mark>*</mark> First Name:</label>
+                                <label for="fname"><span>*</span> First Name:</label>
                                 <p><input type="text" id="fname" name="fname" required></p>
                             </div>
                             <div>
-                                <label for="lname"><mark>*</mark> Last Name:</label>
+                                <label for="lname"><span>*</span> Last Name:</label>
                                 <p><input type="text" id="lname" name="lname" required></p>
                             </div>
                             <div>
-                                <label for="email"><mark>*</mark> Email:</label>
+                                <label for="email"><span>*</span> Email:</label>
                                 <p><input type="email" id="email" name="email" required></p>
                             </div>
                         </section>
-                        <label for="input"><mark>*</mark> Reason for contacting:</label>
-                        <p><input type="text" id="input" name="input" required></p>
+                        <div class="user-input">
+                            <label for="input"><span>*</span> Reason for contacting:</label>
+                            <p><input type="text" id="input" name="input" required></p>
+                        </div>
                         <div class="submit-btn">
                             <p><input type="submit" value="Submit">
                         </div>
@@ -100,15 +100,20 @@ Whether you're enjoying the original fruity squares or exploring one of the many
                     <img src="./img/starburst-logo.png">
                 </a>
             </div>
-            
+            <nav>
+                <menu>
+                    <li><a href="#">Contact & Help</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Where to Buy</a></li>
+                </menu>
+                <menu>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </menu>
+            </nav>
             <div>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                    <li>Item 5</li>
-                </ul>
+                <p>©2025 Mars or Affiliates. Third party trademarks are property of their respective owners.</p>
             </div>
         </footer>
     </body>

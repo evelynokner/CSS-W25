@@ -2,6 +2,7 @@
 Bright Yellow: #FADD4B
 Bright Orange: #E26D12
 Bright Red: #D31821
+Bubblegum Pink: #DA5F9C
 Salmon: #FCB79E
 Cream: #FEE8B8
 **/
@@ -30,8 +31,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
-
 /* FONTS */
 h1,h2,h3,h4,h5,h6{
     font-family: "DynaPuff", sans-serif;
@@ -92,8 +91,15 @@ header menu li a:hover{
     height: auto;
     width: 100%;
 }
+/* section 1 */
 .sec1, .sec2, .sec3{
-    padding: 100px;
+    padding: 30px 100px;
+}
+.sec1 h2, .sec2 h2, .sec3 h2{
+    font-size: 40px;
+}
+.sec1 p, .sec2 p, .sec3 p{
+    line-height: 35px;
 }
 .sec1{
     background-image: linear-gradient(180deg, #FEE8B8, #FADD4B);
@@ -101,15 +107,25 @@ header menu li a:hover{
     align-items: center;
     justify-content: center;
 }
+.sec1 p{
+    padding-right: 80px;
+}
+.sec1 img{
+    clip-path: circle(50%);
+}
+/* section 2 */
 .sec2{
     background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
 }
 .sec3{
     background-image: linear-gradient(180deg, #FADD4B, #E26D12);
 }
-.sec1 img{
-    clip-path: circle(50%);
+.sec3 h6{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
 }
+
 
 /* FORM */
 .contact-form{
@@ -119,7 +135,7 @@ header menu li a:hover{
     border: dotted 3px #D31821;
     border-radius: 10px;
     margin: 20px 200px;
-    background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
+    background-color: #FADD4B;
 }
 .contact-form h4{
     text-align: center;
@@ -131,12 +147,22 @@ header menu li a:hover{
     grid-gap: 30px;
     text-align: left;
 }
+.contact-form label{
+    font-size: 22px;
+}
 .contact-form input{
     font-size: 20px;
     width: 100%;
     padding: 7px;
     border: solid 2px #D31821;
     border-radius: 5px;
+}
+.contact-form span{
+    color: #D31821;
+    font-weight: 500;
+}
+.user-input p input{
+    height: 150px;
 }
 .submit-btn{
     display: flex;
@@ -163,4 +189,29 @@ header menu li a:hover{
 /* FOOTER */
 footer{
     background-image: linear-gradient(180deg, #E26D12, #D31821);
+}
+footer nav{
+    display: flex;
+    align-items: center;
+}
+footer nav menu{
+    list-style: none;
+}
+footer menu li{
+    list-style: none;
+    padding: 5px 15px;
+}
+footer menu li a{
+    color: #f8f8f8;
+    font-size: 20px;
+    transition: all .25s ease-in-out;
+}
+footer menu li a:hover{
+    color: #FADD4B;
+    transition: all .25s ease-in-out;
+}
+footer div p{
+    padding-left: 50px;
+    font-size: 15px;
+    color: #f8f8f8;
 }
