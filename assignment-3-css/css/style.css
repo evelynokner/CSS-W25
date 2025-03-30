@@ -7,23 +7,6 @@ Salmon: #FCB79E
 Cream: #FEE8B8
 **/
 
-
-/*****************
-
-body{
-    margin: 0;
-    display: grid;
-    grid-template-rows: auto; 
-    grid-template-columns: repeat(4, 25%);
-    grid-template-areas: 
-    'head head head head'
-    'mast mast mast mast'
-    'main main main main'
-    'foot foot foot foot';
-    background-color: #f6f4f5;
-}
-***********************/
-
 html{scroll-behavior: smooth;}
 
 body{
@@ -91,9 +74,9 @@ header menu li a:hover{
     height: auto;
     width: 100%;
 }
-/* section 1 */
+/* body sections */
 .sec1, .sec2, .sec3{
-    padding: 30px 100px;
+    padding: 40px 100px;
 }
 .sec1 h2, .sec2 h2, .sec3 h2{
     font-size: 40px;
@@ -101,8 +84,9 @@ header menu li a:hover{
 .sec1 p, .sec2 p, .sec3 p{
     line-height: 35px;
 }
+/* section 1 - ABOUT */
 .sec1{
-    background-image: linear-gradient(180deg, #FEE8B8, #FADD4B);
+    background-image: linear-gradient(180deg, #FADD4B, #E26D12);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,10 +97,48 @@ header menu li a:hover{
 .sec1 img{
     clip-path: circle(50%);
 }
-/* section 2 */
+/* section 2  - PRODUCTS */
 .sec2{
-    background-image: linear-gradient(180deg, #FADD4B, #FCB79E);
+    background-image: linear-gradient(180deg, #FCB79E, #DA5F9C);
 }
+.sec2 h2{
+    text-align: center;
+}
+/* product cards section */
+.sec2 section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* add background & border to each product card */
+.product-1, .product-2, .product-3{
+    background-color: #FEE8B8;
+    border-radius: 15px;
+    margin: 0 40px;
+    padding-top: 20px;
+    width: 40%;
+    
+}
+.product-1 p, .product-2 p, .product-3 p{
+    /* change text color */
+    color:#D31821;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px;
+}
+/* center product images */
+.sec2 div img{
+    height: 250px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* center product text */
+.sec2 div p{
+    text-align: center;
+}
+/* section 3 - INGREDIENTS */
 .sec3{
     background-image: linear-gradient(180deg, #FADD4B, #E26D12);
 }
@@ -125,7 +147,6 @@ header menu li a:hover{
     padding: 0;
     margin: 0;
 }
-
 
 /* FORM */
 .contact-form{
@@ -185,6 +206,7 @@ header menu li a:hover{
     border-color: #E26D12;
     border-radius: 25px;
     transition: all .25s ease-in-out;
+    cursor: pointer;
 }
 /* FOOTER */
 footer{
