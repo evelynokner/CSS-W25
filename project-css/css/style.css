@@ -34,10 +34,9 @@ body{
     height: auto;
 }
 
-
-/* adjust menu location */
 #header nav menu{
     display: flex;
+    justify-content: space-evenly;
     list-style: none;
 }
 #header nav menu li{
@@ -46,8 +45,7 @@ body{
 #header nav menu li a{
     text-decoration: none;
     font-size: 28px;
-    color: #13bfd6;
-    
+    color: #fd8204;
 }
 
 

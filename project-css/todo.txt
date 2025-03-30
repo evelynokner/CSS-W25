@@ -1,6 +1,12 @@
 PROJECT TO-DO
 
+- add fonts 
+
 header:
 - turquoise lines above and below menu
 - make gifs for all products on hover for shop page
 - CTA: product cards (homepage)
+
+justify-content: space-evenly; (menu) (shop page?)
+
+- animated arrow on homepage when hovered
