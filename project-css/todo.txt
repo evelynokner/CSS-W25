@@ -10,3 +10,7 @@ header:
 justify-content: space-evenly; (menu) (shop page?)
 
 - animated arrow on homepage when hovered
+- product cards
+- star icons for products & product cards
+- dropdown menu?
+- nav that stays while scrolling

@@ -2,8 +2,8 @@
 Jellycat Website Colour Scheme (complementary colours)
 Orange: #fd8204
 Pale Orange: #ffd2a4
-Blue: #13bfd6
-Pale Turquoise: #D8E7E5
+Blue: #33CEE5
+Pale Turquoise: #d8e7e5
 Black: #282421
 White: #f8f8f8
 **/
@@ -15,29 +15,44 @@ STYLING IDEAS
 - product pages - multiple images per product, image scrolling
 - hover effects
 **/
-
+html{scroll-behavior: smooth;}
 body{
-    background-color: #f8f8f8;
+    background-color: #d8e7e5;
+    margin: 0;
+}
+@font-face {
+    font-family: "Alata Regular";
+    src: url("../fonts/alata-regular.ttf");
+    font-weight: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Alata Regular", "Mukta Malar", sans-serif;
+}
+p,li,a,figcaption,blockquote{
+    font-family: "Mukta Malar", sans-serif;
 }
 /* HEADER */
 #header{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 125px;
-    width: auto;
+    padding: 0 100px;
+    background-color: #f8f8f8;
 }
 #header div{
     flex-grow: 1;
 }
+/* resize header logo */
 #header div img{
     width: 100px;
     height: auto;
 }
-
 #header nav menu{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    text-transform: lowercase;
 }
 #header nav menu li{
     padding: 10px 30px;
@@ -46,29 +61,24 @@ body{
     text-decoration: none;
     font-size: 28px;
     color: #fd8204;
+    transition: all .25s linear;
+    font-family: "Alata Regular", "Mukta Mular", sans-serif;
+}
+#header nav menu li a:hover{
+    font-size: 25px;
+    color: #ffd2a4;
+    transition: all .25s linear;
 }
 
-
-#header
-.line{
+/* line on header menu and footer */
+#header .line, #footer .line{
     border: none;
     height: 3px;
     width: 70%;
-    background-color: #13bfd6;
+    background-color: #33CEE5;
 }
 
-/* FOOTER */
-.sns-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.sns-icons img{
-    height: 40px;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 /** Mastheads **/
 .home-masthead img, .about-masthead img{
@@ -84,13 +94,13 @@ body{
 
 /** SHOP PAGE **/
 
-.sns-icons img:hover{
+.product-1 img:hover{
     content: url("../img/products/product-1/dog.gif");
 }
-.sns-icons img:hover{
+.product-2 img:hover{
     content: url("../img/products/product-2/frog.gif");
 }
-.sns-icons img:hover{
+.product-3 img:hover{
     content: url("../img/products/product-3/capybara.gif");
 }
 
@@ -99,3 +109,51 @@ body{
 
 
 /** CONTACT PAGE **/
+
+
+/* FOOTER */
+#footer{
+    background-color: #f8f8f8;
+}
+#footer section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: auto;
+    padding: 0 100px;
+}
+/* resize footer logo */
+#footer div img{
+    width: 130px;
+    height: auto;
+}
+#footer .sns-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .sns-icons img{
+    height: 40px;
+    width: auto;
+    padding: 2px 10px;
+}
+/* horizontally center navs */
+#footer #footer-nav nav{
+    display: flex;
+    align-items: center;
+}
+#footer #footer-nav nav menu{
+    list-style: none;
+    padding: 0 30px;
+    font-size: 20px;
+}
+#footer #footer-nav nav menu li a{
+    text-decoration: none;
+    color: #0e0e0e;
+    line-height: 30px;
+}
+/* change footer links text color on hover */
+#footer #footer-nav nav menu li a:hover{
+    color: #33CEE5;
+}
