@@ -99,7 +99,7 @@ p,li,a,figcaption,blockquote{
     text-shadow: -4px 4px 1px #33CEE5;
 }
 /* reposition & resize arrow gif on masthead */
-.home-masthead .arrows{
+.home-masthead .arrows a{
     position: absolute;
     display: block;
     margin-right: auto;
@@ -111,11 +111,11 @@ p,li,a,figcaption,blockquote{
     height: auto;
     transition: all .25s linear;
 }
-.home-masthead .arrows:hover{
+.home-masthead .arrows a:hover{
     content: url(../img/arrows-hover.gif);
     cursor: pointer;
     transition: all .25s linear;
-    width: 125px;
+    width: 130px;
     height: auto;
 }
 /* TODO: add arrow svg linking to shop */
