@@ -56,7 +56,7 @@ p,li,a,figcaption,blockquote{
     text-transform: lowercase;
 }
 #header nav menu li{
-    padding: 15px 30px;
+    padding: 12px 30px;
 }
 #header nav menu li a{
     text-decoration: none;
@@ -70,22 +70,24 @@ p,li,a,figcaption,blockquote{
     color: #ffd2a4;
     transition: all .25s linear;
 }
-
-/* line on header menu and footer */
-#header .line, #footer .line{
-    border: none;
-    height: 3px;
+/* lines on header */
+#header .line{
     width: 70%;
+    height: 3px;
+    border: none;
     background-color: #33CEE5;
 }
 
 /** Mastheads **/
-.home-masthead img, .about-masthead img{
+.home-masthead img, 
+.about-masthead img, 
+.shop-masthead img, 
+.contact-masthead img{
     width: 100%;
     height: auto;
 }
 /* position h1 over masthead img & add text shadow for contrast */
-.home-masthead .masthead-h1{
+.home-masthead h1{
     position: absolute;
     /* 25% from the top of the masthead img */
     top: 22%;
@@ -111,23 +113,142 @@ p,li,a,figcaption,blockquote{
     height: auto;
     transition: all .25s linear;
 }
+/* increase arrow gif size on hover */
 .home-masthead .arrows a:hover{
-    content: url(../img/arrows-hover.gif);
-    cursor: pointer;
-    transition: all .25s linear;
     width: 130px;
     height: auto;
+    transition: all .25s linear;
 }
-/* TODO: add arrow svg linking to shop */
+/* TODO: use svg for arrow instead of gifs */
+
+.about-masthead h2{
+    /* position "about us" h2 at corner of masthead img */
+    position: absolute;
+    top: 25%;
+    right: 80%;
+    color: #f8f8f8;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -4px 4px 1px #fd8204;
+}
+.shop-masthead h1{
+    /* position "products" h1 over masthead img */
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    left: 20%;
+    color: #f8f8f8;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -4px 4px 1px #fd8204;
+}
 
 /** HOMEPAGE **/
+.section-1{
+    background-color: #ffd2a4;
+    border-radius: 20px;
+    margin: 10px 100px;
+    padding: 20px;
+}
+.section-1 h2{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px 0;
+}
+.section-1 p{
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+}
 
-
+/* product cards */
+.product-cards .product-1,
+.product-cards .product-2,
+.product-cards .product-3{
+    background-color: #d8e7e5;
+    border-radius: 25px;
+    /*border: dotted 3px #fd8204;*/
+    margin: 0 40px;
+    padding-top: 20px;
+    width: 300px;
+    height: 450px;
+}
+.product-cards section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+/* center product card images */
+.product-cards img{
+    height: 250px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.product-cards h3{
+    font-size: 20px;
+    text-align: center;
+}
+.product-cards figcaption{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.product-cards .star-rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-cards .star-rating img{
+    width: 25px;
+    height: 25px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin: 0 2px;
+}
+/* "buy now" buttons */
+.product-cards .button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #33CEE5;
+    border: solid 2px #fd8204;
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    padding-top: 15px;
+    transition: all .3s linear;
+}
+.product-cards .button a{
+    color: #f8f8f8;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+/* change button appearance on hover */
+.product-cards .button:hover{
+    cursor: pointer;
+    background-color: #fd8204;
+    transition: all .3s linear;
+}
 /** ABOUT PAGE **/
 
 
 /** SHOP PAGE **/
 
+/*
 .product-1 img:hover{
     content: url("../img/products/product-1/dog.gif");
 }
@@ -136,7 +257,7 @@ p,li,a,figcaption,blockquote{
 }
 .product-3 img:hover{
     content: url("../img/products/product-3/capybara.gif");
-}
+}*/
 
 /** PRODUCT PAGES **/
 
@@ -172,6 +293,13 @@ p,li,a,figcaption,blockquote{
     height: 40px;
     width: auto;
     padding: 2px 10px;
+    transition: all .2s linear;
+}
+/* make sns icons smaller when hovering */
+#footer .sns-icons img:hover{
+    height: 35px;
+    width: auto;
+    transition: all .2s linear;
 }
 /* horizontally center navs */
 #footer #footer-nav nav{
@@ -191,6 +319,13 @@ p,li,a,figcaption,blockquote{
 /* change footer links text color on hover */
 #footer #footer-nav nav menu li a:hover{
     color: #33CEE5;
+}
+/* line separating footer content & copyright text */
+#footer .line{
+    width: 85%;
+    height: 2px;
+    border: none;
+    background-color: #33CEE5;
 }
 /* center copyright text in footer */
 #footer #copyright{
