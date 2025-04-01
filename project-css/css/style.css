@@ -111,13 +111,13 @@ p,li,a,figcaption,blockquote{
     left: 40%;
     width: 120px;
     height: auto;
-    transition: all .25s linear;
+    transition: all .25s ease-in;
 }
 /* increase arrow gif size on hover */
 .home-masthead .arrows a:hover{
-    width: 130px;
+    width: 135px;
     height: auto;
-    transition: all .25s linear;
+    transition: all .25s ease-in;
 }
 /* TODO: use svg for arrow instead of gifs */
 
@@ -179,6 +179,12 @@ p,li,a,figcaption,blockquote{
     width: 300px;
     height: 450px;
 }
+.product-cards h2{
+    font-size: 38px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 25px;
+}
 .product-cards section{
     display: flex;
     align-items: center;
@@ -196,11 +202,11 @@ p,li,a,figcaption,blockquote{
     padding-bottom: 5px;
 }
 .product-cards h3{
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
 }
 .product-cards figcaption{
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -223,10 +229,10 @@ p,li,a,figcaption,blockquote{
     margin-right: auto;
     background-color: #33CEE5;
     border: solid 2px #fd8204;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 170px;
-    height: 40px;
-    padding-top: 15px;
+    height: 35px;
+    padding-top: 12px;
     transition: all .3s linear;
 }
 .product-cards .button a{
