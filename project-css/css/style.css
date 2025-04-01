@@ -15,9 +15,10 @@ STYLING IDEAS
 - product pages - multiple images per product, image scrolling
 - hover effects
 **/
+
 html{scroll-behavior: smooth;}
 body{
-    background-color: #d8e7e5;
+    background-color: #f8f8f8;
     margin: 0;
 }
 @font-face {
@@ -55,7 +56,7 @@ p,li,a,figcaption,blockquote{
     text-transform: lowercase;
 }
 #header nav menu li{
-    padding: 10px 30px;
+    padding: 15px 30px;
 }
 #header nav menu li a{
     text-decoration: none;
@@ -78,13 +79,46 @@ p,li,a,figcaption,blockquote{
     background-color: #33CEE5;
 }
 
-
-
 /** Mastheads **/
 .home-masthead img, .about-masthead img{
     width: 100%;
     height: auto;
 }
+/* position h1 over masthead img & add text shadow for contrast */
+.home-masthead .masthead-h1{
+    position: absolute;
+    /* 25% from the top of the masthead img */
+    top: 22%;
+    right: 20%;
+    left: 20%;
+    color: #f8f8f8;
+    font-size: 75px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -4px 4px 1px #33CEE5;
+}
+/* reposition & resize arrow gif on masthead */
+.home-masthead .arrows{
+    position: absolute;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    top: 35%;
+    right: 40%;
+    left: 40%;
+    width: 120px;
+    height: auto;
+    transition: all .25s linear;
+}
+.home-masthead .arrows:hover{
+    content: url(../img/arrows-hover.gif);
+    cursor: pointer;
+    transition: all .25s linear;
+    width: 125px;
+    height: auto;
+}
+/* TODO: add arrow svg linking to shop */
 
 /** HOMEPAGE **/
 
@@ -107,13 +141,12 @@ p,li,a,figcaption,blockquote{
 /** PRODUCT PAGES **/
 
 
-
 /** CONTACT PAGE **/
 
 
 /* FOOTER */
 #footer{
-    background-color: #f8f8f8;
+    background-color: #d8e7e5;
 }
 #footer section{
     display: flex;
@@ -123,15 +156,17 @@ p,li,a,figcaption,blockquote{
     width: auto;
     padding: 0 100px;
 }
-/* resize footer logo */
+/* resize footer logo img */
 #footer div img{
     width: 130px;
     height: auto;
+    padding: 0 20px;
 }
 #footer .sns-icons{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 #footer .sns-icons img{
     height: 40px;
@@ -157,3 +192,15 @@ p,li,a,figcaption,blockquote{
 #footer #footer-nav nav menu li a:hover{
     color: #33CEE5;
 }
+/* center copyright text in footer */
+#footer #copyright{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+/* adjust spacing btwn lines */
+#footer #copyright p{
+    line-height: 20px;
+    color: #0e0e0e;
+    font-size: 18px;
+} 
