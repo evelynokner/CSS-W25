@@ -16,7 +16,7 @@ body{
 }
 /* FONTS */
 h1,h2,h3,h4,h5,h6{
-    font-family: "DynaPuff", sans-serif;
+    font-family: "DynaPuff", "Montserrat Alternates", sans-serif;
     font-weight: 300;
 }
 p, a, li, td, figcaption, blockquote, input, label{
@@ -104,7 +104,7 @@ header menu li a:hover{
 .sec2 h2, .sec2 p{
     text-align: center;
 }
-/* product cards section */
+/* section 2 - PRODUCT CARDS */
 .sec2 section{
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@ header menu li a:hover{
 /* add background & border to each product card */
 .product-1, .product-2, .product-3{
     background-color: #FEE8B8;
-    border-radius: 15px;
+    border-radius: 10px;
     border: solid 3px #D31821;
     margin: 0 40px;
     padding-top: 20px;
@@ -133,7 +133,38 @@ header menu li a:hover{
     font-size: 22px;
     padding: 10px;
 }
-/* TODO: add "buy now" buttons to product cards */
+/* "where to buy" buttons on product cards */
+.sec2 .button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 185px;
+    height: 35px;
+    background-color: #DA5F9C;
+    border: solid 2px #D31821;
+    border-radius: 5px;
+    padding-top: 12px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    transition: all .3s linear;
+}
+/* change btn appearance when hovering */
+.sec2 .button:hover{
+    cursor: pointer;
+    background-color: #D31821;
+    transition: all .3s linear;
+}
+.sec2 .button a{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f8f8f8;
+}
+.sec2 .button a h4{
+    margin-top: -3px;
+}
 
 /* section 3 - INGREDIENTS */
 .sec3{
