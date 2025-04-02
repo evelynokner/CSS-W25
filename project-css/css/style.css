@@ -151,7 +151,7 @@ p,li,a,figcaption,blockquote{
 .section-1{
     background-color: #ffd2a4;
     border-radius: 20px;
-    margin: 10px 100px;
+    margin: 30px 100px;
     padding: 20px;
 }
 .section-1 h2{
@@ -254,16 +254,70 @@ p,li,a,figcaption,blockquote{
 
 /** SHOP PAGE **/
 
-/*
-.product-1 img:hover{
+.products-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 100px;
+}
+.products-row img{
+    width: 340px;
+    height: auto;
+}
+.products-row figcaption{
+    text-align: center;
+}
+.products-column{
+    padding: 30px;
+}
+/* create border for products */
+.products-column figure{
+    border: dotted 5px #33CEE5;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 10px;
+}
+/* display gif showing different angles 
+of each product 1, 2 & 3 on hover */
+.products-column .product-1 a img:hover{
     content: url("../img/products/product-1/dog.gif");
 }
-.product-2 img:hover{
+.products-column .product-2 a img:hover{
     content: url("../img/products/product-2/frog.gif");
 }
-.product-3 img:hover{
+.products-column .product-3 a img:hover{
     content: url("../img/products/product-3/capybara.gif");
-}*/
+}
+/* product name */
+.products-column figure > figcaption:nth-child(2){
+    font-size: 24px;
+    font-weight: 450;
+    padding: 10px;
+}
+/* product price */
+.products-column figure > figcaption:nth-child(3){
+    font-size: 26px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.products-column .star-rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products-column .star-rating > img{
+    width: 25px;
+    height: 25px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin: 0 2px;
+}
+.products-column .star-rating p{
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 13px;
+    padding-left: 5px;
+}
 
 /** PRODUCT PAGES **/
 
@@ -271,10 +325,11 @@ p,li,a,figcaption,blockquote{
 /** CONTACT PAGE **/
 
 
-/* FOOTER */
+/** FOOTER **/
 #footer{
     background-color: #d8e7e5;
 }
+/* align footer content to center */
 #footer section{
     display: flex;
     align-items: center;

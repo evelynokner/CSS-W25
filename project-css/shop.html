@@ -22,39 +22,181 @@
     <body>
         <!-- header template applied with jQuery -->
         <header id="header"></header>
-        <main>
+        <main class="shop-main">
             <section class="shop-masthead">
                 <h1>Products</h1>
                 <img src="./img/shop-masthead.jpg" alt="jellycat shop masthead">
             </section>
-            <!-- row 1 -->
+            <!-- each section is a row -->
+            <!-- row 1 - this row leads to links to individual product pages -->
             <section class="products-row">
-                <!-- every div is a new column -->
+                <!-- every div is a different column -->
                 <div class="products-column">
                     <!-- product 1 -->
-                    <figure>
+                    <figure class="product-1">
                         <a href="product-1.html">
                             <img src="./img/products/product-1/munro-scottie-dog.jpg" alt="jellycat munro scottie dog plush">
                         </a>
                         <figcaption>Munro Scottie Dog</figcaption>
+                        <figcaption>$33.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(16)</p>
+                        </div>
                     </figure>
                 </div>
                 <div class="products-column">
                     <!-- product 2 -->
-                    <figure>
+                    <figure class="product-2">
                         <a href="product-2.html">
                             <img src="./img/products/product-2/ricky-rain-frog-bag.jpg" alt="jellycat ricky rain frog bag">
                         </a>
                         <figcaption>Ricky Rain Frog Bag</figcaption>
+                        <figcaption>$40.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(19)</p>
+                        </div>
                     </figure>
                 </div>
                 <div class="products-column">
                     <!-- product 3 -->
-                    <figure>
+                    <figure class="product-3">
                         <a href="product-3.html">
                             <img src="./img/products/product-3/clyde-capybara-bag-charm.jpg" alt="jellycat clyde capybara bag charm">
                         </a>
                         <figcaption>Clyde Capybara Bag Charm</figcaption>
+                        <figcaption>$28.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(7)</p>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <!-- the remaining rows are decorative only -->
+            <!-- row 2 -->
+            <section class="products-row">
+                <!-- every div is a different column -->
+                <div class="products-column">
+                    <!-- product 4 -->
+                    <figure>
+                        <img src="./img/products/mia-macaron.jpg" alt="mia macaron">
+                        <figcaption>Mia Macaron</figcaption>
+                        <figcaption>$22.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(10)</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="products-column">
+                    <!-- product 5 -->
+                    <figure>
+                        <img src="./img/products/coffee-to-go-bag.jpg" alt="coffee to go bag">
+                        <figcaption>Coffee-To-Go Bag</figcaption>
+                        <figcaption>$35.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(13)</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="products-column">
+                    <!-- product 6 -->
+                    <figure>
+                        <img src="./img/products/storm-cloud-bag-charm.jpg" alt="storm cloud bag charm">
+                        <figcaption>Storm Cloud Bag Charm</figcaption>
+                        <figcaption>$25.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(6)</p>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <!-- row 3 -->
+            <section class="products-row">
+                <!-- every div is a different column -->
+                <div class="products-column">
+                    <!-- product 7 -->
+                    <figure>
+                        <img src="./img/products/peanut-penguin.jpg" alt="peanut penguin">
+                        <figcaption>Peanut Penguin</figcaption>
+                        <figcaption>$30.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(18)</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="products-column">
+                    <!-- product 8 -->
+                    <figure>
+                        <img src="./img/products/little-pup-bag.jpg" alt="little pup bag">
+                        <figcaption>Little Pup Bag</figcaption>
+                        <figcaption>$40.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(12)</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="products-column">
+                    <!-- product 9 -->
+                    <figure>
+                        <img src="./img/products/timmy-turtle-bag-charm.jpg" alt="timmy turtle bag charm">
+                        <figcaption>Timmy Turtle Bag Charm</figcaption>
+                        <figcaption>$28.00</figcaption>
+                        <!-- star icon to represent 5 star rating -->
+                        <div class="star-rating">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <img src="./img/icons/star.png" alt="star icon">
+                            <!-- number of reviews --> <p>(4)</p>
+                        </div>
                     </figure>
                 </div>
             </section>
