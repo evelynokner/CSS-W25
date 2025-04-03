@@ -8,14 +8,6 @@ Black: #282421
 White: #f8f8f8
 **/
 
-/**
-STYLING IDEAS
-- dropdown menus
-- parallax backgrounds (e.g. masthead)
-- product pages - multiple images per product, image scrolling
-- hover effects
-**/
-
 html{scroll-behavior: smooth;}
 body{
     background-color: #f8f8f8;
@@ -29,7 +21,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: "Alata Regular", "Mukta Malar", sans-serif;
 }
-p,li,a,figcaption,blockquote{
+p,li,a,td, figcaption, label, blockquote{
     font-family: "Mukta Malar", sans-serif;
 }
 
@@ -71,7 +63,7 @@ p,li,a,figcaption,blockquote{
     color: #ffd2a4;
     transition: all .25s linear;
 }
-/* lines on header */
+/* lines surrounding header */
 #header .line{
     width: 70%;
     height: 3px;
@@ -243,14 +235,12 @@ p,li,a,figcaption,blockquote{
     line-height: 30px;
     padding: 20px;
 }
-
 /* product cards */
 .product-cards .product-1,
 .product-cards .product-2,
 .product-cards .product-3{
     background-color: #d8e7e5;
     border-radius: 25px;
-    /*border: dotted 3px #fd8204;*/
     margin: 0 40px;
     padding-top: 20px;
     width: 300px;
@@ -287,7 +277,8 @@ p,li,a,figcaption,blockquote{
     text-align: center;
     padding-bottom: 10px;
 }
-.product-cards .star-rating{
+/* applies to all star rating classes across entire webpage */
+.star-rating{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,11 +368,6 @@ of each product 1, 2 & 3 on hover */
     font-weight: 300;
     padding-bottom: 10px;
 }
-.products-column .star-rating{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .products-column .star-rating > img{
     width: 25px;
     height: 25px;
@@ -409,7 +395,9 @@ of each product 1, 2 & 3 on hover */
 .product-info{
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    padding-top: 10px;
+    padding: 30px 20px 25px; /* top, right & left, bottom */
 }
 .product-info .images{
     display: block;
@@ -418,25 +406,63 @@ of each product 1, 2 & 3 on hover */
     width: 50%;
 }
 .product-info .images img{
-    width: 300px;
+    width: 500px;
     height: auto;
-    
+    /* center biggest image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* separate 2nd & 3rd images from main image */
 .product-info .images div{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 20%;
+    width: 60%;
 }
 /* make other images of product smaller than main img */
 .product-info .images div img{
-    width: 100px;
+    width: 110px;
     height: auto;
     padding: 10px 5px;
 }
 .product-info .description{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.product-info .description h2{
+    font-size: 30px;
+}
+/* align star rating with the rest of the description text */
+.product-info .star-rating{
     display: flex;
-    align-items: center;
+    justify-content: left;
+    padding-top: 10px;
+}
+.product-info .star-rating img{
+    width: 30px;
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin: 0 2px;
+}
+.product-info .star-rating p{
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 400;
+    /* align text w/ stars */
+    padding-bottom: 13px;
+    padding-left: 5px;
+    transition: all .1s linear;
+}
+/* fake linking to product reviews */
+.product-info .star-rating p:hover{
+    color: #33CEE5;
+    cursor: pointer;
+    transition: all .1s linear;
 }
 
 /** CONTACT PAGE **/
