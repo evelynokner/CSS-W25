@@ -32,7 +32,8 @@ h1,h2,h3,h4,h5,h6{
 p,li,a,figcaption,blockquote{
     font-family: "Mukta Malar", sans-serif;
 }
-/* HEADER */
+
+/** HEADER **/
 #header{
     display: flex;
     align-items: center;
@@ -76,6 +77,82 @@ p,li,a,figcaption,blockquote{
     height: 3px;
     border: none;
     background-color: #33CEE5;
+}
+
+/** FOOTER **/
+#footer{
+    background-color: #d8e7e5;
+}
+/* align footer content to center */
+#footer section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: auto;
+    padding: 0 100px;
+}
+/* resize footer logo img */
+#footer div img{
+    width: 130px;
+    height: auto;
+    padding: 0 20px;
+}
+#footer .sns-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+#footer .sns-icons img{
+    height: 40px;
+    width: auto;
+    padding: 2px 10px;
+    transition: all .2s linear;
+}
+/* make sns icons smaller when hovering */
+#footer .sns-icons img:hover{
+    height: 35px;
+    width: auto;
+    transition: all .2s linear;
+}
+/* horizontally center navs */
+#footer #footer-nav nav{
+    display: flex;
+    align-items: center;
+}
+#footer #footer-nav nav menu{
+    list-style: none;
+    padding: 0 30px;
+    font-size: 20px;
+}
+#footer #footer-nav nav menu li a{
+    text-decoration: none;
+    color: #0e0e0e;
+    line-height: 30px;
+}
+/* change footer links text color on hover */
+#footer #footer-nav nav menu li a:hover{
+    color: #33CEE5;
+}
+/* line separating footer content & copyright text */
+#footer .line{
+    width: 85%;
+    height: 2px;
+    border: none;
+    background-color: #33CEE5;
+}
+/* center copyright text in footer */
+#footer #copyright{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+/* adjust spacing btwn lines */
+#footer #copyright p{
+    line-height: 20px;
+    color: #0e0e0e;
+    font-size: 18px;
 }
 
 /** Mastheads **/
@@ -249,11 +326,11 @@ p,li,a,figcaption,blockquote{
     background-color: #fd8204;
     transition: all .3s linear;
 }
+
 /** ABOUT PAGE **/
 
 
 /** SHOP PAGE **/
-
 .products-row{
     display: flex;
     align-items: center;
@@ -320,83 +397,46 @@ of each product 1, 2 & 3 on hover */
 }
 
 /** PRODUCT PAGES **/
-
+.product-display h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    /* add background for product name */
+    background-color: #33CEE5;
+    height: 40px;
+    padding: 15px 0;
+}
+.product-info{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.product-info .images{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.product-info .images img{
+    width: 300px;
+    height: auto;
+    
+}
+/* separate 2nd & 3rd images from main image */
+.product-info .images div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* make other images of product smaller than main img */
+.product-info .images div img{
+    width: 100px;
+    height: auto;
+    padding: 10px 5px;
+}
+.product-info .description{
+    display: flex;
+    align-items: center;
+}
 
 /** CONTACT PAGE **/
-
-
-/** FOOTER **/
-#footer{
-    background-color: #d8e7e5;
-}
-/* align footer content to center */
-#footer section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 160px;
-    width: auto;
-    padding: 0 100px;
-}
-/* resize footer logo img */
-#footer div img{
-    width: 130px;
-    height: auto;
-    padding: 0 20px;
-}
-#footer .sns-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-}
-#footer .sns-icons img{
-    height: 40px;
-    width: auto;
-    padding: 2px 10px;
-    transition: all .2s linear;
-}
-/* make sns icons smaller when hovering */
-#footer .sns-icons img:hover{
-    height: 35px;
-    width: auto;
-    transition: all .2s linear;
-}
-/* horizontally center navs */
-#footer #footer-nav nav{
-    display: flex;
-    align-items: center;
-}
-#footer #footer-nav nav menu{
-    list-style: none;
-    padding: 0 30px;
-    font-size: 20px;
-}
-#footer #footer-nav nav menu li a{
-    text-decoration: none;
-    color: #0e0e0e;
-    line-height: 30px;
-}
-/* change footer links text color on hover */
-#footer #footer-nav nav menu li a:hover{
-    color: #33CEE5;
-}
-/* line separating footer content & copyright text */
-#footer .line{
-    width: 85%;
-    height: 2px;
-    border: none;
-    background-color: #33CEE5;
-}
-/* center copyright text in footer */
-#footer #copyright{
-    display: block;
-    text-align: center;
-    padding: 20px 0;
-}
-/* adjust spacing btwn lines */
-#footer #copyright p{
-    line-height: 20px;
-    color: #0e0e0e;
-    font-size: 18px;
-} 
