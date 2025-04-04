@@ -385,33 +385,36 @@ of each product 1, 2 & 3 on hover */
 /** PRODUCT PAGES **/
 .product-display h1{
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 700;
-    /* add background for product name */
+    /* add background to product name */
     background-color: #33CEE5;
-    height: 40px;
+    height: 44px;
     padding: 15px 0;
 }
 .product-info{
     display: flex;
-    align-items: center;
     justify-content: center;
     padding-top: 10px;
-    padding: 30px 20px 25px; /* top, right & left, bottom */
+    padding: 60px;
 }
 .product-info .images{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
+    border: dotted 5px #fd8204;
+    background-color: #f9f1e9;
+    border-radius: 30px;
 }
 .product-info .images img{
-    width: 500px;
+    width: 370px;
     height: auto;
     /* center biggest image */
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
 }
 /* separate 2nd & 3rd images from main image */
 .product-info .images div{
@@ -425,37 +428,46 @@ of each product 1, 2 & 3 on hover */
 .product-info .images div img{
     width: 110px;
     height: auto;
-    padding: 10px 5px;
+    padding: 10px 5px 15px;
 }
 .product-info .description{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     width: 50%;
+    padding: 0 25px;
 }
 .product-info .description h2{
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.product-info .description h3{
+    font-size: 34px;
+    padding-bottom: 20px;
 }
 /* align star rating with the rest of the description text */
 .product-info .star-rating{
     display: flex;
     justify-content: left;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 .product-info .star-rating img{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     padding-top: 0;
     padding-bottom: 15px;
     margin: 0 2px;
 }
 .product-info .star-rating p{
-    font-size: 25px;
+    font-size: 28px;
     text-decoration: underline;
     font-weight: 400;
-    /* align text w/ stars */
+    /* align text w/ star icons */
     padding-bottom: 13px;
-    padding-left: 5px;
+    padding-left: 20px;
     transition: all .1s linear;
 }
 /* fake linking to product reviews */
@@ -463,6 +475,35 @@ of each product 1, 2 & 3 on hover */
     color: #33CEE5;
     cursor: pointer;
     transition: all .1s linear;
+}
+.product-info p{
+    font-size: 30px;
+}
+.product-info .button{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #33CEE5;
+    border: solid 2px #0e0e0e;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    padding-top: 12px;
+    margin-top: 60px;
+    transition: all .2s linear;
+}
+.product-info .button:hover{
+    cursor: pointer;
+    background-color: #66d6e7;
+    border-color: #66d6e7;
+    transition: all .2s linear;
+}
+.product-info .button h4{
+    color: #f8f8f8;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 /** CONTACT PAGE **/
