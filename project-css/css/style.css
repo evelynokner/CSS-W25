@@ -190,13 +190,13 @@ p,li,a,td, figcaption, label, blockquote{
 }
 /* TODO: use svg for arrow instead of gifs */
 
-.about-masthead h2{
+.about-masthead h1{
     /* position "about us" h2 at corner of masthead img */
     position: absolute;
-    top: 25%;
-    right: 80%;
+    top: 23%;
+    left: 15%;
     color: #f8f8f8;
-    font-size: 50px;
+    font-size: 75px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -214,6 +214,19 @@ p,li,a,td, figcaption, label, blockquote{
     text-align: center;
     text-transform: uppercase;
     text-shadow: -4px 4px 1px #fd8204;
+}
+.contact-masthead h1{
+    /* position "contact us" h1 over masthead img */
+    position: absolute;
+    bottom: 33%;
+    right: 20%;
+    left: 20%;
+    color: #f8f8f8;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -4px 4px 1px #33CEE5;
 }
 
 /** HOMEPAGE **/
@@ -319,7 +332,52 @@ p,li,a,td, figcaption, label, blockquote{
 }
 
 /** ABOUT PAGE **/
-
+.about{
+    background-color: #ffd2a4;
+    border-radius: 20px;
+    margin: 30px 100px;
+    padding: 20px;
+}
+.about h2{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px 0;
+}
+.about p{
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+}
+.history{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: dotted 2px #33CEE5;
+    border-radius: 8px;
+    margin: 30px 200px;
+    padding: 0px 30px;
+}
+.history div{
+    margin: 30px 10px;
+    text-align: left;
+    width: 50%;
+}
+.history h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.history p{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0;
+}
+.history img{
+    width: 50%;
+    height: auto;
+    padding-left: 20px;
+}
 
 /** SHOP PAGE **/
 .products-row{
@@ -336,7 +394,7 @@ p,li,a,td, figcaption, label, blockquote{
     text-align: center;
 }
 .products-column{
-    padding: 30px;
+    padding: 25px 30px;
 }
 /* create border for products */
 .products-column figure{
@@ -364,7 +422,7 @@ of each product 1, 2 & 3 on hover */
 }
 /* product price */
 .products-column figure > figcaption:nth-child(3){
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
     padding-bottom: 10px;
 }
@@ -428,7 +486,7 @@ of each product 1, 2 & 3 on hover */
 .product-info .images div img{
     width: 120px;
     height: auto;
-    padding: 10px 5px 15px;
+    padding: 10px 5px 20px;
 }
 .product-info .description{
     display: block;
