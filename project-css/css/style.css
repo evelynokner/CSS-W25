@@ -21,7 +21,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: "Alata Regular", "Mukta Malar", sans-serif;
 }
-p,li,a,td, figcaption, label, blockquote{
+p,li,a,td, input, textarea, label, figcaption, blockquote{
     font-family: "Mukta Malar", sans-serif;
 }
 
@@ -254,6 +254,8 @@ p,li,a,td, figcaption, label, blockquote{
 .product-cards .product-3{
     background-color: #d8e7e5;
     border-radius: 25px;
+    /* add shadow to product cards for depth */
+    box-shadow: 10px 10px 5px #cccccc;
     margin: 0 40px;
     padding-top: 20px;
     width: 300px;
@@ -568,3 +570,119 @@ of each product 1, 2 & 3 on hover */
 }
 
 /** CONTACT PAGE **/
+/* give a background to the form section */
+.contact-form{
+    padding: 30px;
+    margin: 25px 100px 30px;
+    background-color: #ffd2a4;
+    border-radius: 20px;
+}
+/* center headings */
+.contact-form h2{
+    font-size: 38px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+.contact-form h4{
+    font-size: 28px;
+    text-align: center;
+}
+.contact-form form{
+    width: 100%;
+    height: auto;
+    padding: 40px 100px;
+    display: block;
+    text-align: left;
+}
+.contact-form form section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* change font size of all form labels */
+.contact-form form label{
+    font-size: 25px;
+}
+.contact-form form section p input{
+    width: 200px;
+    height: 30px;
+    font-size: 22px;
+}
+.contact-form form p input{
+    font-size: 22px;
+}
+.contact-form form textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 22px;
+}
+.contact-form form input[type=submit]{
+    width: 100px;
+    height: 40px;
+    background-color: #33CEE5;
+    border: solid 2px #0e0e0e;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+/* Form 1 from lecture for reference
+.basic-form{
+    padding: 2% 5%;
+    text-align: center;
+}
+.basic-form h2{
+    font-size: 3.5em;
+}
+.basic-form form{
+    width: 100%;
+    height: auto;
+}
+.basic-form form div{
+    margin-bottom: 15px;
+}
+.basic-form form div input,
+.basic-form form div textarea{
+    outline: none;
+    border: solid 2px #072d67;
+    border-radius: 10px;
+    transition: all .25s linear;
+}
+ changes appearance when clicking on an input/textarea 
+.basic-form form div input:focus,
+.basic-form form div textarea:focus{
+    border: solid 2px #f9a825;
+    border-radius: 15px;
+}
+.basic-form form div:nth-child(1) input{
+    width: 40%;
+    padding: 15px;
+}
+.basic-form form div:nth-child(2) input{
+    width: 82.5%;
+    padding: 16px;
+}
+.basic-form form div:nth-child(3){
+    text-align: left;
+    padding: 0 8%;
+}
+.basic-form form div:nth-child(4) textarea{
+    width: 82.5%;
+    padding: 17px;
+    height: 150px;
+}
+.basic-form form div:nth-child(5) input{
+    padding: 15px 50px;
+    background-color: #072d67;
+    color: #f4f4f4;
+    border: solid 2px #072d67;
+    border-radius: 10px;
+    transition: all .25s linear;
+}
+.basic-form form div:nth-child(5) input:hover{
+    background-color: #f9a825;
+    border: solid 2px #f9a825;
+    border-radius: 15px;
+}*/
