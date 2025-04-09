@@ -573,11 +573,12 @@ of each product 1, 2 & 3 on hover */
 /* give a background to the form section */
 .contact-form{
     padding: 30px;
-    margin: 25px 100px 30px;
-    background-color: #ffd2a4;
+    margin: 25px 150px 30px;
+    background-color: #d8e7e5;
+    border: 2px solid #0e0e0e;
     border-radius: 20px;
 }
-/* center headings */
+/*center headings*/
 .contact-form h2{
     font-size: 38px;
     text-align: center;
@@ -585,104 +586,93 @@ of each product 1, 2 & 3 on hover */
     padding-bottom: 10px;
 }
 .contact-form h4{
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
 }
 .contact-form form{
-    width: 100%;
+    width: 90%;
     height: auto;
-    padding: 40px 100px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
+    padding: 40px;
 }
+/* change font size of all form labels */
+.contact-form form label{
+    font-size: 28px;
+    padding: 10px;
+}
+/* align fname & lname on same line */
 .contact-form form section{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* change font size of all form labels */
-.contact-form form label{
-    font-size: 25px;
+/* add spacing between fname & lname input boxes */
+.contact-form form section div{
+    padding: 0 10px;
 }
-.contact-form form section p input{
-    width: 200px;
-    height: 30px;
+/* change size of fname & lname input boxes */
+.contact-form form section div p input{
+    width: 440px;
+    height: 50px;
     font-size: 22px;
 }
-.contact-form form p input{
+/* add space between email and fname + lname section */
+.contact-form form .email{
+    padding-top: 15px;
+}
+/* change size of email input box */
+.contact-form form .email p input{
+    width: 97%;
+    height: 50px;
     font-size: 22px;
 }
+/* change textarea size */
 .contact-form form textarea{
-    width: 100%;
+    width: 97%;
     height: 200px;
     font-size: 22px;
+    margin: 30px 0;
 }
-.contact-form form input[type=submit]{
-    width: 100px;
-    height: 40px;
-    background-color: #33CEE5;
-    border: solid 2px #0e0e0e;
-    border-radius: 8px;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-
-/* Form 1 from lecture for reference
-.basic-form{
-    padding: 2% 5%;
-    text-align: center;
-}
-.basic-form h2{
-    font-size: 3.5em;
-}
-.basic-form form{
-    width: 100%;
-    height: auto;
-}
-.basic-form form div{
-    margin-bottom: 15px;
-}
-.basic-form form div input,
-.basic-form form div textarea{
+/* change appearance of input boxes */
+.contact-form form input,
+.contact-form form textarea{
+    border: dotted 2px #0e0e0e;
+    border-radius: 10px;
+    padding: 5px 15px;
     outline: none;
-    border: solid 2px #072d67;
-    border-radius: 10px;
-    transition: all .25s linear;
+    transition: all .3s linear;
 }
- changes appearance when clicking on an input/textarea 
-.basic-form form div input:focus,
-.basic-form form div textarea:focus{
-    border: solid 2px #f9a825;
+/* change appearance of input boxes when in focus */
+.contact-form form input:focus,
+.contact-form form textarea:focus{
+    border: solid 2px #0e0e0e;
+    border-radius: 25px;
+    transition: all .3s linear;
+}
+/* change submit button appearance */
+.contact-form form input[type=submit]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    background-color: #fd8204;
+    border: solid 2px #0e0e0e;
     border-radius: 15px;
+    font-size: 32px;
+    padding-bottom: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .3s linear;
 }
-.basic-form form div:nth-child(1) input{
-    width: 40%;
-    padding: 15px;
+/* change submit button appearance on hover */
+.contact-form form input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #0e0e0e;
+    color: #f8f8f8;
+    border-radius: 30px;
+    transition: all .3s linear;
 }
-.basic-form form div:nth-child(2) input{
-    width: 82.5%;
-    padding: 16px;
-}
-.basic-form form div:nth-child(3){
-    text-align: left;
-    padding: 0 8%;
-}
-.basic-form form div:nth-child(4) textarea{
-    width: 82.5%;
-    padding: 17px;
-    height: 150px;
-}
-.basic-form form div:nth-child(5) input{
-    padding: 15px 50px;
-    background-color: #072d67;
-    color: #f4f4f4;
-    border: solid 2px #072d67;
-    border-radius: 10px;
-    transition: all .25s linear;
-}
-.basic-form form div:nth-child(5) input:hover{
-    background-color: #f9a825;
-    border: solid 2px #f9a825;
-    border-radius: 15px;
-}*/
