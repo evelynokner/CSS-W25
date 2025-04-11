@@ -392,14 +392,11 @@ p,li,a,td, input, textarea, label, figcaption, blockquote{
     width: 340px;
     height: auto;
 }
-.products-row figcaption{
-    text-align: center;
-}
 .products-column{
     padding: 25px 30px;
 }
 /* create border for products */
-.products-column figure{
+.products-column .individual{
     border: dotted 5px #33CEE5;
     border-radius: 15px;
     background-color: #fff;
@@ -417,18 +414,20 @@ of each product 1, 2 & 3 on hover */
     content: url("../img/products/product-3/capybara.gif");
 }
 /* product name */
-.products-column figure > figcaption:nth-child(2){
+.products-column figure figcaption{
     font-size: 24px;
     font-weight: 450;
+    text-align: center;
     padding: 10px;
 }
 /* product price */
-.products-column figure > figcaption:nth-child(3){
-    font-size: 24px;
+.products-column .price{
+    font-size: 27px;
     font-weight: 300;
+    text-align: center;
     padding-bottom: 10px;
 }
-.products-column .star-rating > img{
+.products-column .star-rating img{
     width: 25px;
     height: 25px;
     padding-top: 0;
